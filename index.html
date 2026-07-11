@@ -6,6 +6,10 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<link
+			rel="stylesheet"
+			href="./styles/style.css"
+		/>
 		<title>Dev Conference</title>
 	</head>
 	<body>
@@ -19,11 +23,11 @@
 
 			<!-- Nav Item Start -->
 			<ul id="nav-item-container">
-				<li class="nav-item">Speakers</li>
-				<li class="nav-item">Schedule</li>
-				<li class="nav-item">Tracks</li>
-				<li class="nav-item">Venue</li>
-				<li class="nav-item">Blogs</li>
+				<li class="nav-item"><a href="">Speakers</a></li>
+				<li class="nav-item"><a href="">Schedule</a></li>
+				<li class="nav-item"><a href="">Tracks</a></li>
+				<li class="nav-item"><a href="">Venue</a></li>
+				<li class="nav-item"><a href="">Blogs</a></li>
 			</ul>
 			<!-- Nav Item End -->
 
@@ -33,7 +37,7 @@
 
 		<!-- Hero Section Start -->
 		<section id="hero">
-			<h1 id="hero_header">Code. <span>Connect.</span> Create.</h1>
+			<h1 id="hero_header">Code. <em>Connect.</em> Create.</h1>
 			<p id="hero_description">
 				Join 4,000+ engineers, founders, and builders at the premier
 				developer conference of 2026. Three days of cutting-edge talks,
@@ -47,131 +51,138 @@
 		<section id="speaker">
 			<h1 class="section_title">Meet the Speakers</h1>
 
-			<!-- Speaker Card -->
-			<div class="sp_card">
-				<img
-					src="./assets/andrej.png"
-					alt="Andrej"
-					class="sp_img"
-				/>
-				<div class="sp_info">
-					<span class="speciality">AI / ML</span>
-					<h2>Andrej Karpathy</h2>
-					<p>Pretraining team, Anthropic</p>
+			<div id="speaker_card_container">
+				<!-- Speaker Card -->
+				<div class="sp_card">
+					<img
+						src="./assets/andrej.png"
+						alt="Andrej"
+						class="sp_img"
+					/>
+					<div class="sp_info">
+						<span class="specialty">AI / ML</span>
+						<h2>Andrej Karpathy</h2>
+						<p>Pretraining team, Anthropic</p>
+					</div>
 				</div>
-			</div>
-			<!-- Speaker Card -->
+				<!-- Speaker Card -->
 
-			<!-- Speaker Card -->
-			<div class="sp_card">
-				<img
-					src="./assets/demis.png"
-					alt="Demis Hassabis"
-					class="sp_img"
-				/>
-				<div class="sp_info">
-					<span class="speciality">Cloud & DevOps</span>
-					<h2>Demis Hassabis</h2>
-					<p>Co-Founder and CEO, Google DeepMind</p>
+				<!-- Speaker Card -->
+				<div class="sp_card">
+					<img
+						src="./assets/demis.png"
+						alt="Demis Hassabis"
+						class="sp_img"
+					/>
+					<div class="sp_info">
+						<span class="specialty">Cloud & DevOps</span>
+						<h2>Demis Hassabis</h2>
+						<p>Co-Founder and CEO, Google DeepMind</p>
+					</div>
 				</div>
-			</div>
-			<!-- Speaker Card -->
+				<!-- Speaker Card -->
 
-			<!-- Speaker Card -->
-			<div class="sp_card">
-				<img
-					src="./assets/gary.png"
-					alt="Gary"
-					class="sp_img"
-				/>
-				<div class="sp_info">
-					<span class="speciality">Frontend</span>
-					<h2>Gary Marcus</h2>
-					<p>Staff Engineer, Vercel</p>
+				<!-- Speaker Card -->
+				<div class="sp_card">
+					<img
+						src="./assets/gary.png"
+						alt="Gary"
+						class="sp_img"
+					/>
+					<div class="sp_info">
+						<span class="specialty">Frontend</span>
+						<h2>Gary Marcus</h2>
+						<p>Staff Engineer, Vercel</p>
+					</div>
 				</div>
-			</div>
-			<!-- Speaker Card -->
+				<!-- Speaker Card -->
 
-			<!-- Speaker Card -->
-			<div class="sp_card">
-				<img
-					src="./assets/mustafa.png"
-					alt="Mustafa"
-					class="sp_img"
-				/>
-				<div class="sp_info">
-					<span class="speciality">Security</span>
-					<h2>Mustafa Suleyman</h2>
-					<p>CEO of Microsoft AI</p>
+				<!-- Speaker Card -->
+				<div class="sp_card">
+					<img
+						src="./assets/mustafa.png"
+						alt="Mustafa"
+						class="sp_img"
+					/>
+					<div class="sp_info">
+						<span class="specialty">Security</span>
+						<h2>Mustafa Suleyman</h2>
+						<p>CEO of Microsoft AI</p>
+					</div>
 				</div>
+				<!-- Speaker Card -->
 			</div>
-			<!-- Speaker Card -->
 		</section>
 		<!-- Speaker Section End -->
 
 		<!-- Secure your spot section start -->
 		<section id="secure_spot">
-			<h1 class="section_title">Secure Your Spot</h1>
-			<p class="section_description">
-				Early-bird pricing ends August 15, 2026.
-			</p>
-
-			<!-- Pricing Card (Standard) -->
-			<div class="price_card">
-				<span class="plan_name">Standard</span>
-				<h1 class="price">$399</h1>
-				<p class="price_description">Per Person</p>
-
-				<ul>
-					<li>Access to all 3 conference days</li>
-					<li>48 curated technical talks</li>
-					<li>2 workshop sessions</li>
-					<li>Networking lunch & coffee breaks</li>
-					<li>Conference swag bag</li>
-					<li>Digital recordings (30 days)</li>
-				</ul>
-
-				<button class="price_btn stand_btn">Get Standard</button>
+			<div id="secure_spot_info">
+				<h1 class="ss_title">Secure Your Spot</h1>
+				<p class="ss_description">
+					Early-bird pricing ends August 15, 2026.
+				</p>
 			</div>
-			<!-- Pricing Card (Standard) -->
 
-			<!-- Pricing Card (Pro) -->
-			<div class="price_card dark">
-				<span class="plan_name">Pro</span>
-				<h1 class="price">$749</h1>
-				<p class="price_description">Per Person</p>
-
-				<ul>
-					<li>Everything in Standard</li>
-					<li>Unlimited workshop access</li>
-					<li>Speaker meet & greet</li>
-					<li>VIP networking dinner</li>
-					<li>Lifetime recording access</li>
-					<li>1-on-1 mentorship (30 min)</li>
-				</ul>
-
-				<button class="price_btn active">Get Pro</button>
+			<div id="pricing_card_container">
+				<!-- Pricing Card (Standard) -->
+				<div class="price_card">
+					<div class="price_info">
+						<span class="plan_name">STANDARD</span>
+						<h1 class="price">$399</h1>
+						<p class="price_description">Per Person</p>
+					</div>
+					<hr />
+					<ul>
+						<li>Access to all 3 conference days</li>
+						<li>48 curated technical talks</li>
+						<li>2 workshop sessions</li>
+						<li>Networking lunch & coffee breaks</li>
+						<li>Conference swag bag</li>
+						<li>Digital recordings (30 days)</li>
+					</ul>
+					<button class="price_btn stand_btn">Get Standard</button>
+				</div>
+				<!-- Pricing Card (Standard) -->
+				<!-- Pricing Card (Pro) -->
+				<div class="price_card dark">
+					<div class="price_info">
+						<span class="plan_name">Pro</span>
+						<h1 class="price">$749</h1>
+						<p class="price_description">Per Person</p>
+					</div>
+					<hr />
+					<ul>
+						<li>Everything in Standard</li>
+						<li>Unlimited workshop access</li>
+						<li>Speaker meet & greet</li>
+						<li>VIP networking dinner</li>
+						<li>Lifetime recording access</li>
+						<li>1-on-1 mentorship (30 min)</li>
+					</ul>
+					<button class="price_btn pro_btn">Get Pro</button>
+				</div>
+				<!-- Pricing Card (Pro) -->
+				<!-- Pricing Card (Team) -->
+				<div class="price_card">
+					<div class="price_info">
+						<span class="plan_name">Team</span>
+						<h1 class="price">$5,999</h1>
+						<p class="price_description">up to 10 people</p>
+					</div>
+					<hr />
+					<ul>
+						<li>Everything in Pro (10 seats)</li>
+						<li>Dedicated team lounge access</li>
+						<li>Private workshop booking</li>
+						<li>Company logo on event page</li>
+						<li>Recruitment booth (1 day)</li>
+						<li>Priority customer support</li>
+					</ul>
+					<button class="price_btn team_btn">Contact Us</button>
+				</div>
+				<!-- Pricing Card (Team) -->
 			</div>
-			<!-- Pricing Card (Pro) -->
-
-			<!-- Pricing Card (Team) -->
-			<div class="price_card">
-				<span class="plan_name">Team</span>
-				<h1 class="price">$5,999</h1>
-				<p class="price_description">up to 10 people</p>
-
-				<ul>
-					<li>Everything in Pro (10 seats)</li>
-					<li>Dedicated team lounge access</li>
-					<li>Private workshop booking</li>
-					<li>Company logo on event page</li>
-					<li>Recruitment booth (1 day)</li>
-					<li>Priority customer support</li>
-				</ul>
-
-				<button class="price_btn team_btn">Get Standard</button>
-			</div>
-			<!-- Pricing Card (Team) -->
 		</section>
 		<!-- Secure your spot section end -->
 
