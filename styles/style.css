@@ -52,6 +52,8 @@ a {
 	background-position: center;
 	color: white;
 	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
 }
 
 #hero_header {
@@ -62,7 +64,7 @@ a {
 }
 
 #hero_description {
-	width: 829px;
+	width: 50%;
 	height: 108px;
 	text-align: center;
 	font-size: 22px;
@@ -81,7 +83,7 @@ a {
 	color: white;
 	border: none;
 	display: block;
-	margin: 300px auto 0px;
+	margin: auto;
 }
 
 /* Speaker */
